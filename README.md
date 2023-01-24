@@ -37,8 +37,8 @@ Here's a screenshot of my final output.
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/velvetrose/FAQ-Accordion-Card.git)
+- Live Site URL: [Live Site]([https://your-live-site-url.com](https://velvetrose.github.io/FAQ-Accordion-Card/))
 
 ## My process
 
@@ -65,7 +65,7 @@ I learnt a lot about how to use pseudo-elements like ::before and ::after along 
 
 ## Author
 
-- Frontend Mentor - [@yvelvetrose](https://www.frontendmentor.io/profile/velvetrose)
+- Frontend Mentor - [@velvetrose](https://www.frontendmentor.io/profile/velvetrose)
 
 ## Acknowledgments
 

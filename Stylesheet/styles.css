@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --font: 'Kumbh Sans', sans-serif;
+    --soft-red: hsl(14, 88%, 65%);
+
+    --gradient-violet: hsl(273, 75%, 66%);
+    --gradient-blue: hsl(240, 73%, 65%);
+
+    --light-grayish-blue: hsl(240, 5%, 91%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: var(--font);
+    background: linear-gradient(var(--gradient-violet)50%,var(--gradient-blue));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .outer-container{
+    width: 60%;
+    position: relative;
+  }
+  .my-container{
+    background-color: white;
+    border-radius: 20px;
+    padding: 3rem 3rem 3rem 0;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+    
+  }
+
+  .faq{
+    margin: 1rem 0 1rem 1rem;
+    width: 50%;
+  }
+
+  .faq h1{
+    margin-bottom: 2rem;
+  }
+
+  .faq-row{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .faq-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: var(--very-dark-grayish-blue);
+    gap:2rem;
+  }
+  .faq-content:hover{
+    cursor: pointer;
+  }
+  .question:hover{
+    color: var(--soft-red);
+  }
+  .answer{
+    padding: 1rem;
+    color: var(--dark-grayish-blue);
+    display: none;
+  }
+
+  .arrow{
+    width: 12px;
+    height: 12px;
+  }
+
+  .line{
+    border-bottom: 1px solid var(--light-grayish-blue);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+  /* -----DESKTOP ILLUSTRATIONS---- */
+
+  /* WOMAN ILLUSTRATION */
+  .img-container > img{
+    width:350px;
+    position: absolute;
+    left: -3.5rem;
+    top: 5rem;
+    z-index:2;
+
+  }
+
+  /* PATTERN ILLUSTRATION */
+  .img-container > img:nth-child(2){
+    top:-2rem;
+    left:-14rem;
+    width: 517px;
+    position: absolute;
+    z-index:1;
+  }
+  
+
+  /* BOX ILLUSTRATION */
+  .outer-container::before {
+    content: "";
+    background: url(../images/illustration-box-desktop.svg) no-repeat;
+    width: 268px;
+    height: 180px;
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    transform: translate(-62%, -54%);
+    z-index:3;
+    animation: boxMovement 4s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .outer-container:hover::before {
+    cursor: pointer;
+    filter:grayscale(1);
+    animation: boxMovement 4s ease-in-out, colorChange 5s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  /* BOX ANIMATION */
+
+   @keyframes colorChange {
+    from{
+      filter:hue-rotate(180deg); 
+    }
+    25%{
+      filter:hue-rotate(30deg);
+    }
+    50%{
+      filter:hue-rotate(60deg); 
+    }
+    75%{
+      filter:hue-rotate(120deg); 
+    }
+    100%{
+      filter:hue-rotate(180deg);   
+    }
+    
+  } 
+
+  @keyframes boxMovement {
+    from {
+      transform: translate(-62%, -54%);
+    }
+    50% {
+      transform: translate(-62%, -68%);
+    }
+    to {
+      transform: translate( -62% ,-54%);
+    }
+  }
+  
+  /* MOBILE DESIGN */
+
+  @media screen and (max-width: 1060px) {
+    .outer-container::before {
+      display: none;
+    }
+
+    .img-container{
+      display: none;
+    }
+    .my-container::before {
+      content: "";
+      background: url(../images/illustration-woman-online-mobile.svg) no-repeat;
+      width: 268px;
+      height: 180px;
+      position: absolute;
+      top: -2%;
+      left: 57%;
+      transform: translate(-55%, -55%);
+      z-index: 2;
+    }
+
+    .my-container::after {
+      content: "";
+      background: url(../images/bg-pattern-mobile.svg) no-repeat;
+      width: 268px;
+      height: 180px;
+      position: absolute;
+      top: 5.5rem;
+      left: 50%;
+      transform: translate(-45%, -53%);
+      z-index: 1;
+    }
+    
+    .my-container{
+      margin-top: 10rem;
+      padding: 1rem;
+      overflow: visible;  
+      justify-content: center;
+    }
+
+    .faq h1{
+      margin: 5rem 0 2rem 0;
+      text-align: center;
+    }
+    .faq{
+      width:100%;
+    }
+  }

@@ -60,7 +60,7 @@ I learnt a lot about how to use pseudo-elements like ::before and ::after along 
 
 ### Useful resources
 
-- [Accordion Menus using Vanilla Javascript](https://softauthor.com/accordion-menu-in-vanilla-javascript/) - I reffered this to create the accordion menus that only open one at a time. I am very grateful for this resource.
+- [Accordion Menus using Vanilla Javascript](https://softauthor.com/accordion-menu-in-vanilla-javascript/) - I referred this to create the accordion menus that only open one at a time. I am very grateful for this resource.
 
 
 ## Author

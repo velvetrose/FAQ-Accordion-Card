@@ -38,7 +38,7 @@ Here's a screenshot of my final output.
 ### Links
 
 - Solution URL: [Solution](https://github.com/velvetrose/FAQ-Accordion-Card.git)
-- Live Site URL: [Live Site]([https://your-live-site-url.com](https://velvetrose.github.io/FAQ-Accordion-Card/))
+- Live Site URL: [Live Site](https://your-live-site-url.com](https://velvetrose.github.io/FAQ-Accordion-Card/)
 
 ## My process
 

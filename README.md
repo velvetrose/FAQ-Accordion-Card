@@ -15,8 +15,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 I have designed this page using HTML, CSS and vanilla javascript with a small animation for the Desktop version.
 You can hover over the animation element to watch some colours change.
@@ -38,7 +36,7 @@ Here's a screenshot of my final output.
 ### Links
 
 - Solution URL: [Solution](https://github.com/velvetrose/FAQ-Accordion-Card.git)
-- Live Site URL: [Live Site](https://your-live-site-url.com](https://velvetrose.github.io/FAQ-Accordion-Card/)
+- Live Site URL: [Live Site](https://velvetrose.github.io/FAQ-Accordion-Card/)
 
 ## My process
 
